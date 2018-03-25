@@ -1,21 +1,7 @@
-
-# coding: utf-8
-
-# In[113]:
-
-
 import numpy as np
 import random
 
-
-# In[114]:
-
-
 karten = np.random.randint(1, 5, size=100000)
-
-
-# In[115]:
-
 
 class zufall_ohne:
     def __init__(self):
@@ -25,10 +11,6 @@ class zufall_ohne:
         entfernt = random.choice(self.zufall)
         self.zufall.remove(entfernt)
         return (entfernt)
-
-
-# In[116]:
-
 
 einzel = False
 statistik = {'erster':0, 'zweiter':0, 'dritter':0 ,'vierter':0}
